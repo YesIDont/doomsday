@@ -14,23 +14,34 @@ body {
 h1 {
 	color: #64d4ff;
 	display: block;
-	font-size: 1.6em;
+	font-size: 1.7em;
 	font-weight: bold;
 	line-height: 1em;
-	margin: 0 auto 50px auto;
+	margin: 0 auto 20px auto;
 	text-align: left;
-	width: 310px;	
+	width: 310px;
+	text-transform: uppercase;
+}
+
+h2 {
+	color: #64d4ff;
+	font-size: 1em;
+	line-height: 1.1em;
+	margin: 0 auto 40px auto;
+	text-align: left;
+	width: 310px;
 }
 
 p {
+	background: #daf5ff;
 	font-size: 1em;
 	font-weight: bold;
 	text-align: center;
 	display: block;
 	width: 280px;
 	margin: 0 auto;
-	color: #bbecff;
-	border: 1px solid #64d4ff;
+	color: #0081b4;
+	/*border: 1px solid #64d4ff;*/
 	padding: 10px 15px;
 }
 
