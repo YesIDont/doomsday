@@ -5,14 +5,20 @@
 	font-size: 25px;
 }
 
-body {
-	padding-top: 100px;
-	font-family: 'Open Sans Condensed', sans-serif;
+html {
 	background: #0081b4;
 }
 
+body {
+	padding: 40px;
+	font-family: 'Open Sans Condensed', sans-serif;	
+	width: 310px;
+	border: 1px solid #64d4ff;
+	margin: 50px auto;
+}
+
 h1 {
-	color: #64d4ff;
+	color: #8cdefe;
 	display: block;
 	font-size: 1.7em;
 	font-weight: bold;
@@ -23,23 +29,23 @@ h1 {
 	text-transform: uppercase;
 }
 
-h2 {
+p:not(#timeLeft) {
 	color: #64d4ff;
 	font-size: 1em;
-	line-height: 1.1em;
-	margin: 0 auto 40px auto;
+	line-height: 1.2em;
+	margin: 15px auto;
 	text-align: left;
 	width: 310px;
 }
 
-p {
+#timeLeft {
 	background: #daf5ff;
 	font-size: 1em;
 	font-weight: bold;
 	text-align: center;
 	display: block;
 	width: 280px;
-	margin: 0 auto;
+	margin: 30px auto 0 auto;
 	color: #0081b4;
 	/*border: 1px solid #64d4ff;*/
 	padding: 10px 15px;

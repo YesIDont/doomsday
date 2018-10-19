@@ -16,7 +16,7 @@ var g = new Date(2019, 5, 7, 1),
     targetElement = document.getElementById("timeLeft"),
 
     // separator
-    sp = " :: ",
+    sp = " : ",
 
     // date to display temporary variable;
     dd;
