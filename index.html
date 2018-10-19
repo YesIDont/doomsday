@@ -4,22 +4,39 @@
 	<head>
 	  <meta charset="utf-8">
 
-	  <title>Fryce & Knapki się mnożą</title>
+	  <title>Alarm! Obcy!</title>
 	  <meta name="description" content="The HTML5 Herald">
 	  <meta name="author" content="SitePoint">
 		
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
 	  <link rel="stylesheet" href="style.css">
+	  <link rel="stylesheet" href="tv.css">
 
 	</head>
 
-	<body>
-		<h1>Wykryto obcego</h1>
-		<p>Jurek wykluje się za:</p>
+	<body class="screen">
+		<input type="checkbox" id="switch" checked style="position: fixed; top: -100px;">
+		<label for="switch" class="switch-label" style="position: fixed; top: -100px;">Turn </label>
+		<div class="container">
+			<div id="frame">
+				<div>
+					<h1>Uwaga!&nbsp;Alarm!<br>Wykryto&nbsp;obcego</h1>
+				
+				<p>Jurek wykluje się za:</p>
+				</div>
+				
+				<p id="timeLeft"></p>
+			</div>
 
-		<p id="timeLeft"></p>
+			<div class="overlay"><div class="tv">LIVE FEED</div></div>	
+		</div>
+		
+		
 
-		<div><img src="boy.png" alt="..........."></div>
+		
+		
+		
+		
 
 		<script type="text/javascript" src="initiate-animation.js"></script>
 		<script type="text/javascript" src="app.js"></script>
