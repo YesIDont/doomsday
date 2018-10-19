@@ -18,7 +18,7 @@ body {
 }
 
 h1 {
-	color: #94ddf9;
+	color: #a6e3fb;
 	display: block;
 	font-size: 1.7em;
 	font-weight: bold;
@@ -39,7 +39,7 @@ p:not(#timeLeft) {
 }
 
 #timeLeft {
-	background: #daf5ff;
+	background: #d6ebf3;
 	font-size: 1em;
 	font-weight: bold;
 	text-align: center;
