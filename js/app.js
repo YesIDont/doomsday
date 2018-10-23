@@ -8,8 +8,8 @@ var g = new Date(2019, 5, 7, 1),
    	// container for temporary date
     tmp,
     
-    // object holding day, hours, minutes, seconds and milliseconds left
-    t = {d: '', h: '', m: '', s: '', ms: ''},
+    // object holding weeks, days, hours, minutes, seconds and milliseconds left
+    t = {w: '', d: '', h: '', m: '', s: '', ms: ''},
     
     // html element reference, that will be used
     // to display calculated date
@@ -32,7 +32,10 @@ function howMuchTimeLeftTo(a) {
   dif = (a.getTime()) - (tmp.getTime()),
   
   // how much days are left
-  t.d = Math.floor(dif / 86400000),
+  t.d = Math.abs(Math.floor(dif / 86400000)),
+
+  // how much weeks is left
+  t.w = Math.floor(t.d / 7),
 
   // hours
   t.h = Math.floor( (dif - (t.d * 86400000) ) / 3600000),
@@ -73,15 +76,21 @@ function formatDate() {
 }
 
 // self referencing function calling requestAnimationFrame method
-function animate() {
-  requestAnimationFrame(animate);
+function animateCalc() {
+  requestAnimationFrame(animateCalc);
   howMuchTimeLeftTo(g);
   formatDate();
   targetElement.innerHTML = dd;
 }
 
-window.addEventListener("load", function() {
-  animate();
+function displayOnStart() {
+  var weeksLeft = 40 - t.w;
+  document.getElementById("currentWeek").innerHTML = weeksLeft;
+}
+
+window.addEventListener("load", function() { 
+  animateCalc();
+  displayOnStart();
 });
 
 

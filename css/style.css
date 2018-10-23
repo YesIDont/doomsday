@@ -2,15 +2,26 @@
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 25px;
+	font-size: 23px;
 }
 
 html {
 	width: 100%;
 	height: 100%;
-	background: #000 url(photo.jpg) center left no-repeat;
+	background: #000 url(../img/photo.jpg) center left no-repeat;
 	background-size: cover;
 	font-family: 'Oswald', sans-serif;
+}
+
+body {
+	overflow: hidden;
+}
+
+#canvas {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  opacity: 0.2;
 }
 
 #frame {
@@ -33,20 +44,19 @@ h1 {
 	display: block;
 }
 
-p:not(#timeLeft) {
+p {
 	text-transform: uppercase;
-	font-size: 0.9em;
-	display: block;
 }
 
 #timeLeft {
-	background: #111;
+	background: rgba(0,0,0,0.7);
 	font-size: 1em;
 	font-weight: bold;
 	text-align: center;
 	display: block;
-	width: 320px;
+	width: 285px;
 	margin: 20px auto 0 auto;
 	color: #fff;
 	padding: 10px 15px;
+	text-transform: none;
 }
